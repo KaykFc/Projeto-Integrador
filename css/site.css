@@ -17,23 +17,20 @@ h1 img{
     margin-left: 200px;
     padding: 5px;
    }
-
-#nagivation_header{
-   background-color: #6262F4;
-   text-align: center;
-   
-}   
-
-#nagivation_header li{
-    display: inline-flex;
-}
-
-#nagivation_header li a{
-    color: black;
+   nav {
+    background-color: #6262F4;
+    color: white;
     padding: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
     text-decoration: none;
-    transition: 1s;
-    }
+    color: #000;
+}
 
 .container img{
   max-width: 400%;
