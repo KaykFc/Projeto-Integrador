@@ -18,45 +18,72 @@ h1 img{
     padding: 5px;
    }
 
-#menu-h{
+#nagivation_header{
    background-color: #6262F4;
    text-align: center;
-   margin-bottom: 15px;
+   
 }   
 
-#menu-h li{
-    display:inline-block;
+#nagivation_header li{
+    display: inline-flex;
 }
 
-#menu-h li a{
-    display:flex;
+#nagivation_header li a{
     color: black;
     padding: 10px;
     text-decoration: none;
+    transition: 1s;
     }
 
 .container img{
   max-width: 400%;
   width: 400px;
   height: 400px;
-  border-radius: 100%;
   padding: 5px;
 }
 
 .destaque img{
-    background-color: white;
     width: 100px;
-    margin: 1px;
+    margin: 10px;
     text-align: center;
     line-height: 25px;
-    font-size: 15px;
     padding: 15px;
-    }
+    
+}
 
-    .destaque div{
-        background-color: lightgray;
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        
-    }
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+.btn {
+    font-size: 14px;
+    color: #777;
+    border: none;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
