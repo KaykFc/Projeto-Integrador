@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=width-device-width, initial-scale=1.0">
     <title>QuackTech</title>
 
-    <!--Buscando o css externo-->
+    
     <link rel="stylesheet" href="css/site.css">
 
 
@@ -15,110 +15,194 @@
 </head>
 
 <body>
-    <header id="logo">
-        <div>
-            <h1>
-                <div class="logo"><img src="Imagens/MicrosoftTeams-image.png">
-            </h1>
-
+    <header>
+        <div class="logo"><img src="Imagens/MicrosoftTeams-image.png"></div>
+        <div class="content--add-item">
+            <input type="text" id="input-new-task"  placeholder="Digite sua nova task">
+            <button id="btn-new-task" title="Click para adicionar uma nova task">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+            </button>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Eletrônicos</a></li>
-            <li><a href="#">Brinquedos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-        </ul>
-    </nav>
+    <div class="topnav">
     
+            <a href="#">Home</a>
+            <a href="#">Eletrônicos</a>
+            <a href="#">Brinquedos</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre Nós</a>
+        
+    </div>
 
-    <main class="Banner">
-        <div class="container">
-            <a><img src="Imagens/1g.jpg" alt="Notebok"></a>
-            <a><img src="Imagens/Apple_iPhone_13_Pro_color_lineup_2022.jpg" alt="Celular"></a>
-            <a><img src="Imagens/baby_start_carros_conjunto_de_mini_carrinhos_com_4_unidades_brinquedo_educativo_para_bebes_cores_sor_258441_1_39464224aa4f0d1344e2906532662bf8.jpg"
-                    alt="Carrinho"></a>
+    <!-- Banner -->
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="Imagens/1g.jpg" alt="Notebok"></div>
+                <div class="slide"><img src="Imagens/Apple_iPhone_13_Pro_color_lineup_2022.jpg" alt="Celular"></div>
+                <div class="slide"><img
+                        src="Imagens/baby_start_carros_conjunto_de_mini_carrinhos_com_4_unidades_brinquedo_educativo_para_bebes_cores_sor_258441_1_39464224aa4f0d1344e2906532662bf8.jpg"
+                        alt="Carrinho"></div>
+            </div>
         </div>
 
-        <div class="swiper-horizontal">
-            <div>
-                <h1>Categoria</h1>
+        <!-- Categorias -->
+        <div class="conteudo-info">
+            <article>
+                <h2 class="titulo">Categoria</h2>
+
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/canon-eos-m5-visão-3-4.jpg" alt="foto">
+                        </div>
+                        <h4>FOTOS</h4>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/D_NQ_NP_744368-MLB69686726917_052023-O.webp" alt="fone">
+                        </div>
+                        <h4>FONE</h4>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/1437391153ad7c7c424.jpg" alt="boneco">
+                        </div>
+                        <h4>BONECO</h4>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/camera de gravaçao icone.jpg" alt="filmadora">
+                        </div>
+                        <h4>FILMADORA</h4>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/Ordenador-800-euros-01.jpg" alt="informatica">
+                        </div>
+                        <h4>INFORMATICA</h4>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/Apple_iPhone_13_Pro_color_lineup_2022.jpg" alt="celular">
+                        </div>
+                        <h4>CELULAR</h4>
+                       </div>
+                <div class="acessorios">
+                    <div class="produtos">
+                        <div class="img-produto">
+                            <img src="Imagens/imagem icone carrinho.jpg" alt="carrinho">
+                        </div>
+                        <h4>CARRINHO</h4>
+                       </div>
             </div>
 
-            <div class="destaque">
-                <img src="Imagens/canon-eos-m5-visão-3-4.jpg" alt="Camera">
+            </article>
 
-                <div class="text-destaque">
-                    <h2>Fotografia</h2>
-                </div>
-                <div class="destaque">
-                    <img src="Imagens/D_NQ_NP_744368-MLB69686726917_052023-O.webp" alt="Fones">
-                </div>
-                <div class="text-destaque">
-                    <h2>Fones</h2>
-                </div>
-                <div class="destaque">
-                    <img src="Imagens/191974161fe28eb3832.jpg" alt="Bonecos">
+            <!-- Produtos -->
+            
+            <article class="conteudo-info">
 
-                    <div class="text-destaque">
-                        <h2>Bonecos</h2>
-                    </div>
-                    <div class="destaque">
-                        <img src="Imagens/1xg.jpg" alt="Filmadora">
+                <div class="card" id="card-pacote">
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                   
+                 </div>
+    
+            </article>
+            
+            <article class="conteudo-info">
 
-                        <div class="text-destaque">
-                            <h2>Filmadora</h2>
-                        </div>
-                        <div class="destaque">
-                            <img src="Imagens/Ordenador-800-euros-01.jpg" alt="Informatica">
+                <div class="card" id="card-pacote">
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                    <section class="card-pacote-info">
+                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg" alt="mouse gamer">
+                        <h3>mouse gamer com led RGB usb</h3>
+                        <span>R$ 30,00</span>
+                       
+                        <div class="pac-flex">
+                            <div class="pac-fotos"><a href="#">Comprar</a></div>
+                    </section>
+                   
+                 </div>
+    
+            </article>
+                    
 
-                            <div class="text-destaque">
-                                <h2>Informatica</h2>
-                            </div>
-                            <div class="destaque">
-                                <img src="Imagens/celular-samsung-galaxy-a51-128gb-4gb-ram-tela-65-4-cameras-291747.jpg"
-                                    alt="Celular">
-
-                                <div class="text-destaque">
-                                    <h2>Celular</h2>
-                                </div>
-                                <div class="destaque">
-                                    <img src="Imagens/1437391153ad7c7c424.jpg" alt="Carrinhos">
-
-                                    <div class="text-destaque">
-                                        <h2>Carrinho</h2>
-                                    </div>
-                                </div>
-
-
-                                <div class="container-card ">
-                                    <div class="card">
-                                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg"
-                                            alt="Produto 1">
-                                        <h2>Mouse gamer</h2>
-                                        <p>R$ 99,99</p>
-                                        <button class="btn">COMPRAR</button>
-                                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg"
-                                            alt="Produto 1">
-                                        <h2>Mouse gamer</h2>
-                                        <p>R$ 99,99</p>
-                                        <button class="btn">COMPRAR</button>
-                                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg"
-                                            alt="Produto 1">
-                                        <h2>Mouse gamer</h2>
-                                        <p>R$ 99,99</p>
-                                        <button class="btn">COMPRAR</button>
-                                        <img src="Imagens/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg"
-                                            alt="Produto 1">
-                                        <h2>Mouse gamer</h2>
-                                        <p>R$ 99,99</p>
-                                        <button class="btn">COMPRAR</button>
-                                    </div>
-                                </div>
-
-
-    </main>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        </main>
 
 
 
