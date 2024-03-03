@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -14,54 +15,48 @@ header {
    margin-left: 100px;
    padding: 5px;
 }
-
+ 
+/* pesquisa */
 .content--add-item{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-   
+    justify-content:center;
+    
 }
 
 #input-new-task,#btn-new-task{
     border: none;
-    font-size: 1rem;
-    outline: none;
-    padding: 0rem;
-    
+    font-size: 1rem;    
 }
 
 #input-new-task{
     width: 50rem;
     padding: 10px;
-    border-radius: 3rem;
     
 }
 #btn-new-task{
     text-align: center;
-    border-radius: 1rem;
     width: 50px;
     height: 40px;
     cursor: pointer;
     transition: .4s;
 }
 
-
-.topnav {
+    /* nav */
+.navbar {
     overflow: hidden;
     background-color: #6262F4;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+}
+.navbar li,a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 100px;
 }
 
-.topnav a {
-    float: left; 
-    display:flex;
-    color: #f2f2f2;
-    text-decoration:none;
-    padding: 14px 16px;
-    
-}
-
-.topnav a:hover {
+.navbar a:hover {
     background-color: #ddd;
     color: #6262F4;
 }
@@ -79,15 +74,13 @@ header {
 }
 
 .slide {
-    flex: none;
     width: 100%;
     height: 100%;
-   
 }
 
 .slide img {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border-radius: 25px;
 }
 
@@ -100,12 +93,13 @@ header {
 }
 
 .produtos img{
-    max-width: 100px;
     border: solid #7f7f80;
     border-radius: 100%;
     box-shadow: grey 1px 1px 5px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -135,12 +129,12 @@ img {
     border-radius: 5px;
     padding: 1px;
     box-shadow: grey 1px 1px 5px;
-    margin: 20px 20px 0;
+    margin: 10px 10px 0;
     min-width: 300px;   
 }
 
-.pac-fotos {
-    background-color: #A98E12;
+.pacote{
+    background-color: #6262F4;
     color: #000;
     width: 80px;
     border-radius: 5px;
@@ -152,19 +146,19 @@ img {
 .flex {
     display: flex;
     justify-content: center;
-    margin: 15px 0;
+    margin: 25px;
 }
 
-.pac-fotos a:hover,
-.pac-fotos a:focus {
-    background-color: #ecda87;
+.pacote a:hover,
+.pacote a:focus {
+    background-color: #6262F4;
     color: #fff;
     transition: background-color 1s;
     border-radius: 5%;
 }
 
-.pac-fotos a:link,
-.pac-fotos a:visited {
+.pacote a:link,
+.pacote a:visited {
     color: #000;
     transition: background-color 1s;
     min-height: inherit;
@@ -172,3 +166,4 @@ img {
     text-decoration: none;
 }
 
+/* footer */
