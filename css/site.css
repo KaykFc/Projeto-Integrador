@@ -100,25 +100,22 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* nav */
-.navbar {
-    overflow: hidden;
+.header .header-2{
     background-color: #6262F4;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+}
+.header .header-2 .navbar{
+    text-align: center; 
+}
+.header .header-2 .navbar a{
+    color: #fff; 
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+.header .header-2 .navbar a:hover{
+    background-color: #fff;
 }
 
-.navbar li,
-a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 100px;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: #6262F4;
-}
 
 
 /* Banner */
