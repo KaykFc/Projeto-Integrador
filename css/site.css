@@ -232,7 +232,7 @@
 
 
 /* footer */
-.rodape {
+.footer {
     border-top: solid #7f7f80 5px;
     background-color: #262678;
     color: #ddd; 
@@ -240,38 +240,32 @@
     width: 100%;
 }
 
-.rodape p,
+.footer p,
 li {
     font-size: 16px;
 }
 
-.rodape img {
+.footer img {
     margin: 0 5px;
 }
 
-.rodape-conteudo {
+.footer-conteudo {
     padding: 15px;
     color: #fff;
 }
 
-.rodape-conteudo ul {
+.footer-conteudo ul {
     list-style: none;
     margin: 0 auto;
     padding: 10px 0;
 }
 
-#logo-rodape {
-    min-width: 146px;
-    width: 150px;
-    margin: 0 auto;
-}
-
-.menu-rodape a {
+.menu-footer a {
     text-decoration: none;
     color: #fff;
 }
 
-.menu-rodape a:hover {
+.menu-footer a:hover {
     color: #7f7f80;
 }
 
@@ -282,15 +276,14 @@ li {
 
 
 
-.rodape-conteudo {
+.footer-conteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-#logo-rodape,
-.menu-rodape,
+.menu-footer,
 .redes {
     margin: 0 auto;
 }
