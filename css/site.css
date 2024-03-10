@@ -10,27 +10,9 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
-    transition: width none;
+    transition: none;
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 5rem;
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: #000;
-}
 .logo img{
     width: 80px;
     height: 80px;
@@ -39,32 +21,32 @@ html::-webkit-scrollbar-thumb {
 }
 .header .header-1 {
     background-color: #262678;
-    padding: 1.5rem 9%;
+    padding: 15px 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .header .header-1 .logo {
-    font-size: 2.5rem;
+    font-size: 25px;
     font-weight: bolder;
     color: #000;
 }
 
 .header .header-1 .search-form {
-    width: 50rem;
-    height: 5rem;
+    width: 50%;
+    height: 40px;
     border: border;
     overflow: hidden;
     background: #fff;
     display: flex;
     align-items: center;
-    border-radius: .5rem;
+    border-radius: 5px;
 }
 
 .header .header-1 .search-form input {
-    font-size: 1.6rem;
-    padding: 0 1.2rem;
+    font-size: 20px;
+    padding: 0 12px;
     height: 100%;
     width: 100%;
     text-transform: none;
@@ -72,8 +54,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .header-1 .search-form label {
-    font-size: 2.5rem;
-    padding-right: 1.5rem;
+    font-size: 30px;
+    padding-right: 15px;
     color: #000;
     cursor: pointer;
 }
@@ -84,8 +66,8 @@ html::-webkit-scrollbar-thumb {
 
 .header .header-1 .icons div,
 .header .header-1 .icons a{
-    font-size: 2.5rem;
-    margin-left: 1.5rem;
+    font-size: 25px;
+    margin-left: 15px;
     color: #000;
     cursor: pointer;
 }
@@ -220,7 +202,7 @@ html::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 
-
+/* categorias */
 
 
 
@@ -245,101 +227,72 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     margin: 5px;
-    margin-left: 90px;
-
+    margin-left: 0;
 }
 
 
 /* footer */
-footer {
+.rodape {
+    border-top: solid #7f7f80 5px;
     background-color: #262678;
-    padding: 0;
+    color: #ddd; 
+    text-align: center;
+    width: 100%;
 }
 
-.container {
-    width: 1140px;
-    padding: 10px;
+.rodape p,
+li {
+    font-size: 16px;
+}
+
+.rodape img {
+    margin: 0 5px;
+}
+
+.rodape-conteudo {
+    padding: 15px;
+    color: #fff;
+}
+
+.rodape-conteudo ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#logo-rodape {
+    min-width: 146px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.menu-rodape a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-rodape a:hover {
+    color: #7f7f80;
+}
+
+.redes img {
+    min-width: 35px;
+    width: 35px;
+}
+
+
+
+.rodape-conteudo {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -100px;
-}
-
-.footer-content {
-    width: 33.3%;
-}
-
-h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    color: #ddd;
-}
-
-.footer-content p {
-    width: 190px;
-    padding: 7px;
-}
-
-.footer-content ul {
-    text-align: center;
-}
-
-.list {
-    padding: 1px;
-}
-
-.list li {
-    width: auto;
-    text-align: center;
-    list-style-type: none;
-    padding: 4px;
-
-}
-
-.list li::before {
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: #262678;
-    transition-duration: .5s;
-}
-
-list li:hover::before {
-    width: 70px;
-}
-
-.social-icons {
-    text-align: center;
-    padding: 0;
-
-}
-
-.social-icons li {
-    display: flex;
     justify-content: center;
-    text-align: center;
-    padding: 7px;
+    align-items: center;
 }
 
-.social-icons i {
-    color: #fff;
-    font-size: 25px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #7f7f80;
-}
-
-.social-icons i:hover {
-    color: #7f7f80;
+#logo-rodape,
+.menu-rodape,
+.redes {
+    margin: 0 auto;
 }
 
 .bottom-bar {
