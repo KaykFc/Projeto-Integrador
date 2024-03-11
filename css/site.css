@@ -240,11 +240,6 @@
     width: 100%;
 }
 
-.footer p,
-li {
-    font-size: 16px;
-}
-
 .footer img {
     margin: 0 5px;
 }
@@ -259,7 +254,10 @@ li {
     margin: 0 auto;
     padding: 10px 0;
 }
-
+.footer-cont img{
+    min-width: 45px;
+    width: 45px;
+}
 .menu-footer a {
     text-decoration: none;
     color: #fff;
@@ -270,17 +268,26 @@ li {
 }
 
 .redes img {
-    min-width: 35px;
-    width: 35px;
+    min-width: 45px;
+    width: 45px;
 }
-
-
 
 .footer-conteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+.rede-icons a{
+    display: inline-block;
+    font-size: 22px;
+    color: #ddd;
+    transition: all .40s ease;
+    padding: 10px;
+}
+.rede-icons a:hover{
+    color: #7f7f80;
+    transform: translateY(-5px);
 }
 
 .menu-footer,
