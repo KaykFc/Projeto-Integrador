@@ -208,26 +208,30 @@
 
 /* Produtos */
 .produtos img {
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
-
+#card-produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .produtos>div {
     background-color: white;
+    box-shadow: #7f7f80;
     width: 250px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
-    line-height: 25px;
-    font-size: 15px;
-    padding: 15px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 10px;
 }
 
 .produtos {
-    background-color: #f0ebeb; 
+   
     display: flex;
     justify-content: center;
-    margin: 5px;
-    margin-left: 0;
+    margin: 10px;
 }
 
 
