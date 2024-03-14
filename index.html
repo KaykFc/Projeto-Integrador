@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
     <header class="header">
         <div class="header-1">
             
-            <div class="logo"><img src="Imagens/MicrosoftTeams-image.png"></div>
+            <div class="logo"><img src="imagem/MicrosoftTeams-image.png"></div>
 
             <form action="" class="search-form">
                 <input type="search" name="search" placeholder="Pesquisar..." id="search-box">
@@ -34,15 +34,18 @@
         </div>
     </header>
 
-
-    <div class="topnav">
-        <a href="#">HOME</a>
-        <a href="#">ELETRÔNICOS</a>   
-        <a href="#">BRINQUEDOS</a>
-        <a href="#">CONTATO</a>
-        <a href="#">SOBRE NÓS</a>
-    </div>
-
+     
+    <span id="iconMenu" class="material" onclick="clickMenu()">
+        <i class="fa-solid fa-bars"></i>
+        </span>
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#">Eletrônicos</a>
+            <a href="#">Brinquedos</a>
+            <a href="#" >Contato</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+    
 
     <main>
         <!-- Banner --> 
@@ -55,13 +58,13 @@
 
                 <!-- Slide imagens -->
                 <div class="slide first">
-                    <img src="Imagens/1_lenovo.webp" alt="imagem 1">
+                    <img src="imagem/1xg.jpg" alt="imagem 1">
                 </div>
                 <div class="slide">
-                    <img src="Imagens/1xg.jpg" alt="imagem 2">
+                    <img src="imagem/MicrosoftTeams-image.png" alt="imagem 2">
                 </div>
                 <div class="slide">
-                    <img src="Imagens/baby_start_carros_conjunto_de_mini_carrinhos_com_4_unidades_brinquedo_educativo_para_bebes_cores_sor_258441_1_39464224aa4f0d1344e2906532662bf8.jpg"
+                    <img src="imagem/mouse_gamer_6_teclas_led_rgb_rayden_c_fio_2137_1_9be3538441aeb0dba70136d5837886d8_20210604115736.jpg"
                         alt="imagem 3">
                 </div>
 
@@ -87,7 +90,39 @@
 
 
         <!-- Categorias -->
-      
+        <article class="card">
+            <h2 class="titulo">Categorias</h2>
+            <div class="card-conteudo">
+                <figure>
+                    <a><img src="Imagens/MicrosoftTeams-image (5).png" alt=""></a>
+                    <h3>Câmera</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/D_NQ_NP_744368-MLB69686726917_052023-O.webp" alt=""></a>
+                    <h3>Fone</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/1469736675d05db26a4.jpg" alt=""></a>
+                    <h3>Bonecos</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/camera de gravaçao icone.jpg" alt=""></a>
+                    <h3>Filmadoras</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/Ordenador-800-euros-01.jpg" alt=""></a>
+                    <h3>Informatica</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/Apple_iPhone_13_Pro_color_lineup_2022.jpg" alt=""></a>
+                    <h3>Celular</h3>
+                </figure>
+                <figure>
+                    <a><img src="Imagens/imagem icone carrinho.jpg" alt=""></a>
+                    <h3>Carrinho</h3>
+                </figure>
+            </div>
+        </article>
 
             <!-- Produtos -->
         <section>
@@ -126,32 +161,27 @@
                     <p>Cnon FIlmadora Profissional XA60 UHD 4k</p>
                     <h3>R$ 9.999,00</h3>
                 </div>
-                <div><img src="" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus provident velit, Temporibus.
-                    </p>
-                    <h3></h3>
+                <div><img src="Imagens/MicrosoftTeams-image (10).png" alt="">
+                    <p>Tripé progissional niko</p>
+                    <h3>R$ 200,00</h3>
                 </div>
             </div>
             <div class="produtos" id="card-produto">
-                <div><img src="" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus provident velit, Temporibus.
-                    </p>
-                    <h3></h3>
+                <div><img src="Imagens/celular-samsung-galaxy-a51-128gb-4gb-ram-tela-65-4-cameras-291747.jpg" alt="">
+                    <p>Celular Samsung </p>
+                    <h3>R$ 1.500,00</h3>
                 </div>
-                <div><img src="" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus provident velit, Temporibus.
-                    </p>
-                    <h3></h3>
+                <div><img src="Imagens/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg" alt="">
+                    <p>Apple Maccbook Pro</p>
+                    <h3>R$5.000.00</h3>
                 </div>
-                <div><img src="" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus provident velit, Temporibus.
-                    </p>
-                    <h3></h3>
+                <div><img src="Imagens/LED-TV.jpg" alt="">
+                    <p>Monito Samsung led-Tv 24 polegada</p>
+                    <h3>R$ 2.000,00</h3>
                 </div>
-                <div><img src="" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente doloribus provident velit, Temporibus.
-                    </p>
-                    <h3></h3>
+                <div><img src="Imagens/MicrosoftTeams-image (6).png" alt="">
+                    <p>Câmera Nikon D5500 com lente 18-55mm VR</p>
+                    <h3>R$ 2.100.99</h3>
                 </div>
             </div>
             
@@ -213,3 +243,4 @@
 
 
 </html>
+
