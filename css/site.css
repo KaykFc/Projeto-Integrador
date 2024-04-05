@@ -203,112 +203,104 @@ nav a:focus,
 
 
 /* Banner */
-.slider {
-    margin: 0 auto;
-    width: 100px;
-    height: 200px;
-    overflow: hidden;
-}
 
-.slides {
-    width: 100%;
-    height: 200px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 24%;
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-}
-
-.slide img {
-    width: 200px;
-    height: 150px;
-}
-
-.manual-navigation {
-    position: absolute;
+    margin: auto;
+  }
+  
+  .slideshow-container img{
     width: 100px;
-    margin-top: 170px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #262678;
-    padding: 5px;
-    border-radius: 10px;
+    height: 200px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
     cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #6262F4;
-}
-
-#radio1:checked ~ .first {
-    margin-left: px;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -30px;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-.navigation-auto div {
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
     position: absolute;
-    width: 100px;
-    margin-top: 170px;
-    display: flex;
-    justify-content: center;
-}
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
 
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
 
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: #fff;
-}
 
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: #fff;
-}
 
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: #fff;
-}
+
+
 
 /* categorias */
-.card {
+.card-conteudo{
     margin: 15px;
     padding: 5%;
 }
-.card a img{
+.card-conteudo a img{
     width: 90%;
     height: 70px;
     border-radius: 70%;
 }
-.card h2{
+.card-conteudo h2{
     text-align: center;
 }
 .card-conteudo figure {
@@ -328,35 +320,47 @@ nav a:focus,
    
 }
 
+
+
+
+
+
+
 /* Produtos */
-.produtos img {
-    width: 100%;
-    height: 190px;
-}
-#card-produto{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    
-}
-.produtos>div {
-    background-color: white;
-    box-shadow: #7f7f80;
-    width: 250px;
-    margin: 5px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    padding: 10px;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  width: 250px;
+  padding: 10px;
 }
 
-.produtos {
-   
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.card:hover {
+  box-shadow: 0 8px 10px 0;
 }
+
+.container {
+  padding: 2px 16px;
+}
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+
 
 
 
@@ -386,26 +390,16 @@ nav a:focus,
         align-items: center;
     }
 
-
-
-
-
-    .card-conteudo{
+.card{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
 
-
-    .card-conteudo {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
+ 
     
     
 }
